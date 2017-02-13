@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+html{
+height:100%;
+background-color:#aac;
+	
+}
+body{
+width:80%;
+background-color:#f00;
+border:1px solid red;
+float:right;
+margin-top:30%;
+	
+}
+header{
+	background-color:#cfc;
+	height:100px;
+	width:100%;
+	border:1px solid black;
+}
+main{
+	background-color:#cfc;
+	border:1px solid black;
+	height:800px;
+	width:100%;
+}
+ footer{
+ 	background-color:#f55;
+	border:1px solid black;
+	height:100px;
+	width:100%;
+ }
