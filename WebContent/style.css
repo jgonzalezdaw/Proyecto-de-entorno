@@ -25,7 +25,7 @@ body{
 width:80%;
 border:1px solid black;
 float:right;
-margin-top:15%;
+margin-top:120px;
 	
 }
 
@@ -59,8 +59,8 @@ header{
 #cssmenu:after, #cssmenu ul:after {content: ''; display: block; clear: both;}
 #cssmenu a {background-color: #000; color: #FFF; padding: 0 10px; border-left: 1px solid #FFF; }
 #cssmenu ul {text-transform: uppercase;}
-#cssmenu ul ul {border-top: 3px solid #F00; text-transform: none; min-width: 190px;}
-#cssmenu ul ul a {background-color: #333; color: #FFF; border: 1px solid #000; border-top: 0 none; padding: 0px 10px;}
+#cssmenu ul ul {border-top: 3px solid #F00; text-transform: none;}
+#cssmenu ul ul a {background-color: #333; color: #FFF; text-align: center; border: 1px solid #000; border-top: 0 none; padding: 0px 10px;}
 #cssmenu ul ul ul {border-top: 0 none;}
 #cssmenu ul ul li {position: relative}  
 #cssmenu > ul > li > a {line-height: 48px;}
