@@ -25,8 +25,8 @@
 		
 		<!--  CSS / JS / JQ -->
 		<link rel="stylesheet" href="style.css" />
-		<script src="jquery-latest.js"></script>
-		<script src="Script.js"></script>
+		<script src="js/jquery-latest.js"></script>
+		<script src="js/Script.js"></script>
 		
 		
 		<title>Tutoriales de GitHub</title>
@@ -37,62 +37,75 @@
 				<div class="cssmenu">
 				  <ul>
 					 <li class="active"><a>GitHub</a></li>
-					  <li class="has-sub"><a href="basic.html">Git Básico</a>
+					  <li  class="has-sub"><a href="basic.html">Conceptos</a>
 						<ul>
-							 <li><a href="basic.html#">Opción 1</a></li>
-							 <li><a href="basic.html#">Opción 2</a></li>
-							 <li><a href="basic.html#">Opción 3</a></li>
-							 <li><a href="basic.html#">Opción 4</a></li>
-							 <li><a href="basic.html#">Opción 5</a></li>
-							 <li><a href="basic.html#">Opción 6</a></li>
+							 <li><a href="basic.html#ginstala">Instala Git</a></li>
+							 <li><a href="basic.html#gconfigura">Configurar Git</a></li>
+							 <li><a href="basic.html#grepositorios">Repositorios</a></li>
+							 <li><a href="basic.html#gcommits">Commits</a></li>
+							 <li><a href="basic.html#gramas">Ramas</a></li>
+							 <li><a href="basic.html#gfork">Fork</a></li>
+							 <li><a href="basic.html#geclipseWeb">Eclipse / Web</a></li>
 						</ul>
 					 </li>
-					  <li class="has-sub"><a href="advanced.html">Git Avanzado</a>
+					  <li class="has-sub"><a href="advanced.html">Comandos</a>
 						<ul>
-							 <li><a href="advanced.html#">Opción 1</a></li>
-							 <li><a href="advanced.html#">Opción 2</a></li>
-							 <li><a href="advanced.html#">Opción 3</a></li>
-							 <li><a href="advanced.html#">Opción 4</a></li>
-							 <li><a href="advanced.html#">Opción 5</a></li>
-							 <li><a href="advanced.html#">Opción 6</a></li>
+							 <li><a href="advanced.html#ginit">Git init</a></li>
+							 <li><a href="advanced.html#gadd">Git add</a></li>
+							 <li><a href="advanced.html#gstatus">Git status</a></li>
+							 <li><a href="advanced.html#gcommit">Git commit</a></li>
+							 <li><a href="advanced.html#glog">Git log</a></li>
+							 <li><a href="advanced.html#gcheckout">Git checkout</a></li>
+							 <li><a href="advanced.html#gdiff">Git diff</a></li>
+							 <li><a href="advanced.html#greset">Git reset</a></li>
+							 <li><a href="advanced.html#gbranch">Git branch</a></li>
+							 <li><a href="advanced.html#gremote">Git remote</a></li>
+							 <li><a href="advanced.html#gpush">Git push</a></li>
+							 <li><a href="advanced.html#gpull">Git pull</a></li>
+							 <li><a href="advanced.html#gclone">Git clone</a></li>
+							 <li><a href="advanced.html#gfetch">Git fetch</a></li>
+							 <li><a href="advanced.html#gmerge">Git merge</a></li>
+							 <li><a href="advanced.html#gstash">Git stash</a></li>
+							 <li><a href="advanced.html#grebase">Git rebase</a></li>
+							 <li><a href="advanced.html#gtag">Git tag</a></li>
+							 <li><a href="advanced.html#grevert">Git revert</a></li>
 						</ul>
 					 </li>
-					 <li class="has-sub"><a href="tutorials.html">Git Tutoriales</a>
+					 <li class="has-sub"><a href="tutorials.html">Guías de Git en PDF</a>
 						<ul>
-							 <li><a href="tutorials.html#">Opción 1</a></li>
-							 <li><a href="tutorials.html#">Opción 2</a></li>
-							 <li><a href="tutorials.html#">Opción 3</a></li>
-							 <li><a href="tutorials.html#">Opción 4</a></li>
-							 <li><a href="tutorials.html#">Opción 5</a></li>
-							 <li><a href="tutorials.html#">Opción 6</a></li>
+							 <li><a href="tutorials.html#tgramas">Ramas</a></li>
+							 <li><a href="tutorials.html#tgrevertreset">Revert vs Reset</a></li>
+							 <li><a href="tutorials.html#tgeclipse">Eclipse</a></li>
 						</ul>
 					 </li>
 				  </ul>
 				</div>
 				
 				<div id="github"><a href="https://github.com">Ir a GitHub</a></div>
-				
+			</header>
 			
 			<main>
-			<h2>¿Qué es GitHub?</h2>
-			<p>GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Utiliza el framework Ruby on Rails por GitHub, Inc. (anteriormente conocida como Logical Awesome). Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.</p>
-			
-			<p>El desarrollo de la plataforma GitHub comenzó el 1 de octubre de 2007. El sitio fue lanzado en abril de 2008 por Tom Preston-Werner, Chris Wanstrath y PJ Hyett después de que se había puesto a disposición durante unos meses antes como una versión beta.</p>
+				<article>
+					<h2>¿Qué es GitHub?</h2>
+					<p>GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Utiliza el framework Ruby on Rails por GitHub, Inc. (anteriormente conocida como Logical Awesome). Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.</p>
+					
+					<p>El desarrollo de la plataforma GitHub comenzó el 1 de octubre de 2007. El sitio fue lanzado en abril de 2008 por Tom Preston-Werner, Chris Wanstrath y PJ Hyett después de que se había puesto a disposición durante unos meses antes como una versión beta.</p>
 
-			<p>Los proyectos en GitHub se pueden acceder y manipular utilizando la interfaz de línea de comandos estándar de Git con el cual todos los comandos estándar de Git funcionan. GitHub también permite a los usuarios registrados y no registrados navegar por los repositorios públicos del sitio. Varios clientes de escritorio y complementos Git también han sido creados por GitHub y otros de terceros que se integran con la plataforma.</p>
+					<p>Los proyectos en GitHub se pueden acceder y manipular utilizando la interfaz de línea de comandos estándar de Git con el cual todos los comandos estándar de Git funcionan. GitHub también permite a los usuarios registrados y no registrados navegar por los repositorios públicos del sitio. Varios clientes de escritorio y complementos Git también han sido creados por GitHub y otros de terceros que se integran con la plataforma.</p>
 
-			<p>El sitio proporciona funciones de redes sociales como feeds, seguidores, wikis (usando el software wiki llamado Gollum) y un gráfico de redes sociales para mostrar cómo los desarrolladores trabajan en sus versiones ("bifurcaciones" o "forks" en Ingles) de un repositorio cuya función es más nueva.</p>
+					<p>El sitio proporciona funciones de redes sociales como feeds, seguidores, wikis (usando el software wiki llamado Gollum) y un gráfico de redes sociales para mostrar cómo los desarrolladores trabajan en sus versiones ("bifurcaciones" o "forks" en Ingles) de un repositorio cuya función es más nueva.</p>
 
-			<p>Un usuario debe crear una cuenta para contribuir con el contenido del repositorio, pero los repositorios públicos pueden ser explorados y descargados por cualquiera. Con una cuenta de usuario registrada, los usuarios pueden discutir, administrar, crear repositorios y enviar contribuciones a los repositorios de otros y revisar los cambios en el código.</p>
+					<p>Un usuario debe crear una cuenta para contribuir con el contenido del repositorio, pero los repositorios públicos pueden ser explorados y descargados por cualquiera. Con una cuenta de usuario registrada, los usuarios pueden discutir, administrar, crear repositorios y enviar contribuciones a los repositorios de otros y revisar los cambios en el código.</p>
 
-			<p>El software que ejecuta GitHub fue escrito usando Ruby on Rails y Erlang de GitHub, Inc. Desarrolladores Chris Wanstrath, PJ Hyett y Tom Preston-Werner.</p>
-			
+					<p>El software que ejecuta GitHub fue escrito usando Ruby on Rails y Erlang de GitHub, Inc. Desarrolladores Chris Wanstrath, PJ Hyett y Tom Preston-Werner.</p>
+				</article>
 			</main>
 			
 			<footer>
 				<p id="autor1">Miquel Costa<br/>
 				Visita: <a id="IesSonFerrer" href="http://www.iessonferrer.net"> IES Son Ferrer </a><br/>
-				Todos los derechos reservados 2017 &copy </p> 
+				Todos lo estudiado en clase resumido 2017 &copy <br/>
+				Practica de Entorno y Desarrollo junto a Lenguaje de Marcas.</p> 
 				<a href="http://es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptable"><img id="responsiveIcon" title="HTML5, CSS3, JavaScript, Responsive" alt="HTML5, CSS3, JavaScript, Responsive" src="imagenes/responsive.png" /></a>
 			</footer>
 		</div>

@@ -1,8 +1,6 @@
 @CHARSET "UTF-8";
 
 
-
-
 html{
 font-family: Arial;	
 font-size: 62.5%; 
@@ -13,25 +11,14 @@ background-image: url("imagenes/logo.png");
 background-repeat: no-repeat;
 	
 }
-body{
-width:80%;
-border:1px solid black;
-float:right;
-margin-top:120px;
-	
-}
+body{width:80%; border:1px solid black; float:right; margin-top:120px;}
 
 #wrapper {width: 100%; margin: 0 auto;}
 
 
 /* CSS HEADER */
 
-header{
-	background-color:#F90;
-	height:55px;
-	width:100%;
-
-}
+header{	background-color:#F90;	height:55px;	width:100%;}
 	
 /* Menu */
 .cssmenu {padding: 0; margin: 0; border: 0; font-size: 1.5rem; font-size: 1.5em; font-weight: bold; position: relative;	z-index:1000; margin-bottom: -55px;}
@@ -68,7 +55,7 @@ header{
 .cssmenu ul li.last ul ul {left: auto; right: 99.5%;}
 
 /* Menu Fixed*/
-.cssmenu-fixed {padding: 0; margin: 0; border: 0; font-size: 1.5rem; font-size: 1.5em; font-weight: bold; min-width:80%;  position: fixed;	z-index:1000; top:0px; }
+.cssmenu-fixed {padding: 0; margin: 0; border: 0; font-size: 1.5rem; font-size: 1.5em; font-weight: bold; min-width:80%; position: fixed; z-index:1000; top: 0px; }
 .cssmenu-fixed ul, .cssmenu li {list-style: none; margin: 0; padding: 0;}
 .cssmenu-fixed ul {position: relative; z-index: 597; }
 .cssmenu-fixed ul li { float: left; min-height: 1px; vertical-align: middle;}
@@ -109,15 +96,14 @@ header{
 /* CSS MAIN */
 
 #github {position: fixed;	z-index:1000; top:90%; left: 4%; font-size: 2em; border: 1px solid black; border-radius: 10px; padding: 5px 25px 5px 25px;}
-main{
-	background-color:#FFEEDD; margin-top: 55px;
-	border-top:1px solid black;
-	width:100%;
-}
 
-main h2 {font-size: 3em; padding-top: 10px; padding-left: 20px;}
-main p {padding: 20px; font-size: 2em; background-color:#FFEEDD; margin-bottom: 0px;}
+main{background-color: #FFEEDD; border-top: 1px solid black; width: 100%;}
+main article h2 {font-size: 3em; padding-top: 10px; padding-left: 20px;}
+main article p {padding: 20px; font-size: 2em; background-color:#FFEEDD; margin-bottom: 0px;}
 
+#tgramas {display: none;}
+#tgrevertreset {display: none;}
+#tgeclipse{display: none;}
 
 
 
