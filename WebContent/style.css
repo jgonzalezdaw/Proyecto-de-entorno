@@ -50,6 +50,8 @@ header{	background-color:#F90;	height:55px;	width:100%;}
 .cssmenu ul ul li:last-child:hover > a { border-radius: 0 0 10px 10px; }
 .cssmenu ul ul li.has-sub > a:after {content: '➤'; position: absolute; top: 50%; right: 15px; margin-top: -8px;}
 .cssmenu ul li:hover > a, .cssmenu ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenu ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenu ul li:hover > a {background-color: #CF0; color: #000;}
 .cssmenu ul li.has-sub > a:after {margin-left: 5px;}
 .cssmenu ul li.last ul {left: auto; right: 0;}
 .cssmenu ul li.last ul ul {left: auto; right: 99.5%;}
@@ -83,7 +85,8 @@ header{	background-color:#F90;	height:55px;	width:100%;}
 .cssmenu-fixed ul ul li:last-child > a {border-radius: 0 0 10px 10px; box-shadow: 0 1px 0 #000;}
 .cssmenu-fixed ul ul li:last-child:hover > a { border-radius: 0 0 10px 10px; }
 .cssmenu-fixed ul ul li.has-sub > a:after {content: '➤'; position: absolute; top: 50%; right: 15px; margin-top: -8px;}
-.cssmenu-fixed ul li:hover > a, .cssmenu ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenu-fixed ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenu-fixed ul li:hover > a {background-color: #CF0; color: #000;}
 .cssmenu-fixed ul li.has-sub > a:after {margin-left: 5px;}
 .cssmenu-fixed ul li.last ul {left: auto; right: 0;}
 .cssmenu-fixed ul li.last ul ul {left: auto; right: 99.5%;}
@@ -98,8 +101,8 @@ header{	background-color:#F90;	height:55px;	width:100%;}
 #github {position: fixed;	z-index:1000; top:90%; left: 4%; font-size: 2em; border: 1px solid black; border-radius: 10px; padding: 5px 25px 5px 25px;}
 
 main{background-color: #FFEEDD; border-top: 1px solid black; width: 100%;}
-main article h2 {font-size: 3em; padding-top: 10px; padding-left: 20px;}
-main article p {padding: 20px; font-size: 2em; background-color:#FFEEDD; margin-bottom: 0px;}
+main article h2 {font-size: 2em; padding-top: 10px; padding-left: 20px;}
+main article p {padding: 20px; font-size: 1.5em; background-color:#FFEEDD; margin-bottom: 0px;}
 
 #tgramas {display: none;}
 #tgrevertreset {display: none;}

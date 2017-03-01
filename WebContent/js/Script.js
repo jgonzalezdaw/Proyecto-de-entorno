@@ -12,6 +12,7 @@ $(document).ready(function(){
 });
 
 
+
 function mostrar1(){
 document.getElementById('glinks').style.display = 'none';
 document.getElementById('tgramas').style.display = 'block';

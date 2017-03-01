@@ -85,41 +85,85 @@
 			<div id="github"><a href="https://github.com">Ir a GitHub</a></div>
 			
 			<main>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				<article id="ginstala">
+					<h2>Instalando GIT en Windows / Linux / Mac</h2>
+					<p>Para instalar GIT en nuestro sistema basta con seguir los siguientes pasos.</p>
+					<p><b>En Windows:</b> Instalar Git en Windows es muy fácil. El proyecto msysGit tiene uno de los procesos de instalación más sencillos. Simplemente descarga el archivo exe del instalador desde la página de GitHub, y ejecútalo:<br/> 
+					<a href="https://git-for-windows.github.io/">Descargar instalador para Windows</a>
+					
+					<br/><br/>Una vez instalado, tendrás tanto la versión de línea de comandos (incluido un cliente SSH que nos será útil más adelante) como la interfaz gráfica de usuario estándar.
+					
+					<br/><br/>Nota para el uso en Windows: Se debería usar Git con el shell proporcionado por msysGit (estilo Unix), lo cual permite usar las complejas líneas de comandos de este libro (ver "guía oficial" al pie de página). Si por cualquier razón se necesitara usar el shell nativo de Windows, la consola de línea de comandos "cmd", se han de usar las comillas dobles en vez de las simples (para parámetros que contengan espacios) y se deben poner entre comillas los parámetros terminándolos con el acento circunflejo (^) si están al final de la línea, ya que en Windows es uno de los símbolos de continuación.</p>
+					
+					<p><b>En Linux:</b> Si quieres instalar Git en Linux a través de un instalador binario, en general puedes hacerlo a través de la herramienta básica de gestión de paquetes que trae tu distribución. 
+					
+					<br/><br/>Si estás en Fedora, puedes usar yum: ( <u>yum install git-core</u> ).
+					
+					<br/><br/>O si estás en una distribución basada en Debian como Ubuntu, prueba con apt-get: ( <u>apt-get install git</u> ) </p>
+					
+					<p><b>En Mac:</b> Hay tres maneras fáciles de instalar Git en un Mac. <br/>
+					<b>1º</b> La primera más sencilla es usar el instalador gráfico de Git, que puedes descargar desde la página de SourceForge:<br/>
+					<a href="https://sourceforge.net/projects/git-osx-installer/">Descargar instalador para Mac</a>
+					
+					<br/><br/><b>2º</b> La segunda es instalar Git a través de <a href="http://www.macports.org">MacPorts</a>. Si tienes MacPorts instalado, instala Git con ( <u>sudo port install git-core +svn +doc +bash_completion +gitweb</u> ).
+					
+					<br/><br/><b>3º</b> La tercera es <a href="http://brew.sh/">Homebrew</a>. Si ya tienes instalado Homebrew, instala Git con ( <u>brew install git</u> )</p>
+					
+					
+					
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gconfigura">
+					<h2>Configurando Git</h2>
+					<p>Ahora que tienes Git instalado toca configurarlo, esto solo se debe hacer una sola vez.<br/>
+					Git dispone de una herramienta llamada GitConfig que te permite configurar algunas opciones de Git, el archivo puede estar en tres rutas distintas.</p>
+						<ol>
+							<li> /etc/gitconfig: Donde se guarda la información de todos los usuarios y repositorios.</li>
+							<li> ~/.gitconfig: Donde se guarda su información de usuario.</li>
+							<li> .git/config: Donde se guarda la información de un repositorio (cada commit sobrescribe el archivo).</li>
+						</ol>
+					<p>En sistemas Windows, Git busca el archivo .gitconfig en el directorio $HOME (%USERPROFILE% in Windows’ environment), que es C:\Documents and Settings\$USER para la mayoría de usuarios, dependiendo de la versión ($USER es %USERNAME% en el entorno Windows). También busca en el directorio /etc/gitconfig, aunque esta ruta es relativa a la raíz MSys, que es donde quiera que decidieses instalar Git en tu sistema Windows cuando ejecutaste el instalador.
+						<br/><br/>				
+						<b>Tu identidad</b><br/>
+						Lo primero que debes hacer es establecer tu nombre de usuario y dirección de email. Es importante porque los cambios (commits) en Git usan esta información:
+						<br/><br/>
+						<u>git config --global user.name "Nombre Apellidos"</u><br/>
+						<u>git config --global user.email SuEmail@example.com</u>
+					</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="grepositorios">
+					<h2>Repositorios</h2>
+					<p>Los repositorios son el lugar de trabajo donde se guardan todos los datos con los que trabajamos, estos repositorios pueden tener miles de archivos. Ademas de ello, un repositorio permite a más de una persona trabajar en dicho repositorio directamente, normalmente por medio de las <a href="#gramas">ramas</a> o por medio del uso de <a href="#gfork">fork</a>. Los repositorios suelen ser en su mayoría de casos públicos (a la vista de cualquiera), los cuales puede descargar y colaborar en el proyecto si quiere.<br/><br/>
+					Un repositorio se inicia desde la web de GitHub cual posteriormente podremos acceder desde el terminal o consola del sistema usando los comandos (init, add, commit, push) como los principales comandos para trabajar en el repositorio (<a href="advanced.html">ver comandos</a>) </p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gcommits">
+					<h2>Commits</h2>
+					<p>Los commits es la forma para preparar un envió de datos al repositorio. Solo podemos hacer un commit si se han realizado cambios en el proyecto o se ha vuelto a un estado anterior con un REBASE o un RESET (<a href="advanced.html">ver comandos</a> o <a href="tutorials.html" >Ver tutoriales</a>). Tras realizar los cambios necesarios a nuestro proyecto podremos hacer un commit el cual nos preparara el/os archivos del proyecto junto a un nombre y descripción para enviarlo al repositorio. Git le dará un ID al commit así como también situara el HEAD en dicho commit. Posteriormente a elección del usuario podrá enviar o no el commit al repositorio.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gramas">
+					<h2>Ramificaciones en Git</h2>
+					<p>Las ramas es una forma de separar varias partes del trabajo y evitar que puedan producirse fallos o errores por parte del usuario y evitar tocar la rama principal. Para entenderlo mejor hay que explicar como funciona el sistema de Git. Git utiliza unos marcadores para saber donde está situado el usuario con su último estado. La rama principal se llama (Origin/Master) de esta forma podemos saber cual es la rama primaria. El marcador (HEAD) indica donde estamos situados en ese momento, rama y commit en el que nos encontramos. La última etiqueta suele ser el nombre de la rama en la que nos encontramos. En caso de hacer un MERGE (juntar las ramas en la principal o en otra rama) nos aparecerá el nombre de ambas o todas las ramas que están en ese mismo punto. Hay que tener en cuenta que antes de unir las ramas hay que actualizar al último estado en que se encuentra la rama de la cual hicimos la copia ya que podríamos eliminar parte del proyecto que no tenemos al día. Para entenderlo mejor mira (<a href="tutorials.html" >Ver tutoriales</a>)</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gfork">
+					<h2>Haciendo Fork</h2>
+					<p>Qué es hacer un Fork?. Cuando entras en un repositorio de Git que no te pertenece puedes ver que en la esquina superior derecha hay un botón [FORK|0] (donde 0 habrá cualquier número). Al pulsar vas hacer una copia de ese repositorio a tu cuenta de Git y podrás trabajar como quieras en ese repositorio ya que tienes una copia exacta (Ten en cuenta que FORK no es hacer un COPY sino más bien es como crear una rama nueva pero en lugar de trabajar en el repositorio directamente trabajas en uno propio, lo que implica que puedes hacer lo que quieras con ello ya que no tocara el repositorio original. Tras hacer los cambios necesarios así como cuando hacíamos una rama diferente debíamos usar MERGE para fusionar los datos y seleccionar que se queda y que no se queda en el caso del FORK el creador del repositorio podrá examinar de antemano los cambios que has realizado y decidir si acepta esos cambios o no. En pocas palabras, es como trabajar sobre una copia de seguridad que no afecta a la versión original del repositorio.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="geclipseWeb">
+					<h2>Git utilizando Eclipse Neon</h2>
+					<p>El Software Eclipse Neon es una herramienta gratuita para trabajar en JAVA, sin embargo es posible instalarle complementos para poder trabajar con Git, ademas de ello es mucho más fácil y cómodo para los usuarios que no están familiarizados a trabajar con comandos de consola/terminal ya que dispone de un entorno gráfico (UI = User Interface) que facilita mucho el trabajar más rápidamente y eficiente sin necesidad de escribir los comandos, pero a su vez puede ser un poco caótico a la hora de trabajar con diferentes proyectos a la vez o incluso dar conflictos y errores al juntarse la base de JAVA con el complemento de Git. Para facilitar el entender como funciona puedes (<a href="tutorials.html" >ver tutoriales</a>)</p>
 				</article>
 			</main>
 			
 			<footer>
 				<p id="autor1">Miquel Costa<br/>
 				Visita: <a id="IesSonFerrer" href="http://www.iessonferrer.net"> IES Son Ferrer </a><br/>
-				Todos lo estudiado en clase resumido 2017 &copy <br/>
-				Practica de Entorno y Desarrollo junto a Lenguaje de Marcas.</p> 
+				Todo lo estudiado en clase resumido 2017<br/>
+				Practica de Entorno y Desarrollo junto a Lenguaje de Marcas. (<a href="https://git-scm.com/book/es/v1">Guía Oficial</a>)</p> 
 				<a href="http://es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptable"><img id="responsiveIcon" title="HTML5, CSS3, JavaScript, Responsive" alt="HTML5, CSS3, JavaScript, Responsive" src="imagenes/responsive.png" /></a>
 			</footer>
 		</div>

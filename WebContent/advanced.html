@@ -85,89 +85,116 @@
 			<div id="github"><a href="https://github.com">Ir a GitHub</a></div>
 			
 			<main>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				<article id="ginit">
+					<h2>git init</h2>
+					<p>Inicia el seguimiento del proyecto (carpeta) para iniciar el repositorio.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gadd">
+					<h2>gid add <code><</code>archivo/carpeta<code>></code></h2>
+					<p>Añade los archivos y/o carpetas indicados al seguimiento de git.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gstatus">
+					<h2>git status</h2>
+					<p>Muestra el estado de los archivos y/o carpetas con y sin seguimiento.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gcommit">
+					<h2>git commit</h2>
+					<p>Hace un commit de los archivos y/o carpetas con seguimiento mostrándolos en verde mientras que los que no tienen seguimientos son mostrándolos en rojo.<br/>
+					Utiliza el comando "git commit -m "comentario / descripción" para hacer un commit directo sin entrar en editor de texto para añadirle una descripción.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="glog">
+					<h2>git log / git log --oneline</h2>
+					<p>Muestra un gráfico detallado o simplificado (caso de --oneline) del estado del repositorio con sus ramas, forks y commits realizados hasta el momento.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gcheckout">
+					<h2>git checkout / git checkout -B <code><</code>nombre<code>></code></h2>
+					<p>El checkout se utiliza para cambiar de rama, por ejemplo (git checkout origin/master) con esto nos iremos a la rama master en caso de estar en otra rama.<br/>
+					En caso de utilizar "-B" lo que haras sera crear una nueva rama y te iras a ella directamente, dando por hecho que estamos en la rama "origin/master" si hacemos un
+					(git checkout -B miRama) nos creara una rama llamada "miRama" y nos iremos a dicha rama directamente.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gdiff">
+					<h2>git diff</h2>
+					<p>Git diff te muestra una comparativa entre el archivo que estas modificando y el archivo que tienes preparado para hacerle un commit tras usar el comando "git add".
+					Para entender como funciona, supongamos que tienes un archivo de texto (hola.txt) y en el que has escrito algunas cosas dentro, tras ello has hecho un "git add hola.txt" y antes de hacer el commit revisas el archivo y te das cuenta que has cometido errores y por ello rectificas el archivo. Aquí es cuando entra el "git diff" y te mostrara las diferencias entre el hola.txt preparado para hacerle un commit y el que no lo esta que acabas de modificar. Hay que tener en cuenta que "git diff" te mostrara los cambios de todos los archivos.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="greset">
+					<h2>git reset --HARD HEAD~1 / git reset --SOFT HEAD~1</h2>
+					<p>Git Reset se utiliza para volver a un estado anterior donde no nos gusta el último commit, es muy similar al REVERT pero no actúa de la misma forma. <br/>
+					Podemos observar que hay dos comandos de reset, HARD y SOFT. En el caso de utilizar HARD nos eliminara el último commit y los archivos que contenía si fueron creados o los devolverá al estado del anterior commit. En el caso de utilizar el SOFT nos eliminara el último commit pero con la diferencia de que en lugar de borrarnos los archivos o recuperar el estado anterior los mantendrá como estaban. (<a href="tutorials.html" >Ver tutoriales</a>)</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gbranch">
+					<h2>git branch <code><</code>nombre<code>></code></h2>
+					<p>Git branch nos permite crear una nueva rama que suele ir acompañado del comando "git checkout" para desplazarnos a esta nueva rama. Estos comandos no suele utilizarse ya que podemos hacer uso del "git checkout -B" que nos ahorra tiempo y escritura al crear una nueva rama y movernos a ella.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gremote">
+					<h2>git remote add origin <code><</code>URL<code>></code></h2>
+					<p>Git remote nos permite añadir la URL de un git remoto lo que nos permite trabajar con él, por ejemplo, si trabajamos en un Git local necesitaremos añadir una URL si queremos realizar un commit y enviar el proyecto al repositorio que se encuentra en GitHub y para poder hacer eso utilizaremos el comando "git push" que se explica a continuación.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gpush">
+					<h2>git push</h2>
+					<p>Git push nos permite enviar todos los commits realizados hasta el momento a nuestro repositorio de Git siempre que hayamos puesto la URL indicado anteriormente. Tras introducir el comando se nos pedirá introducir nuestro usuario y contraseña de Git que se nos pedirá cada vez que utilicemos el comando (en Eclipse es posible guardar las credenciales para que no lo pida cada vez, pero no es buena idea hacerlo debido a que si más gente utiliza el sistema podría acceder al repertorio y borrar y cambiar lo que quiera).</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gpull">
+					<h2>git pull</h2>
+					<p>Al igual que para enviar los datos al repositorio hay un comando, para descargarlos también hay un comando y es el "git pull". Este comando se utiliza en caso de que el repositorio se haya actualizado y queramos descargar los cambios que se han realizado. Es posible que indique conflicto si hay diferencias respecto a commits anteriores con el repositorio por lo que se le pedirá al usuario que solucione el conflicto de forma manual.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gclone">
+					<h2>git clone <code><</code>URL<code>></code></h2>
+					<p>Git clone es similar hacer un FORK pero con la diferencia de que hacemos un copia exacta del repositorio para nuestro uso mientras que el FORK es para agregar o modificar funciones al repositorio a través de una copia que posteriormente volverá al origen y el usuario creador decidirá si aceptar los cambios o mejoras. El clonar nos hará una copia a nuestro git y cuando hagamos un commit y push lo enviara a nuestra cuenta de Git a un repositorio con el mismo nombre de manera que nunca modificaremos el repositorio original.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gfetch">
+					<h2>git fetch <code><</code>nombre de la rama en que estamos<code>></code></h2>
+					<p>Si el repositorio en el que estamos trabajando se le aplican cambios nosotros deberemos utilizar el comando "git fetch + nombre de la rama" para verificar si hay cambios respecto a nuestra versión ya que podríamos borrar algo importante que se ha añadido posterior a nuestra versión en la que estamos trabajando.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gmerge">
+					<h2>git merge <code><</code>nombre de la rama a fusionar<code>></code></h2>
+					<p>Merge es fusionar y lo utilizamos para fusionar dos ramas o más. Para entenderlo mejor supongamos que hemos estado trabajando en un proyecto de git en la rama "master" y que un compañero ha creado una rama llamada "prueba1" para modificar un archivo y ha funcionar correctamente. Para que esa rama se junte con la rama "master" y guardar los cambios deberemos usar el comando "git merge prueba1" fusionaremos la rama con "master", tras ello si hay conflicto evidente git nos dará un aviso de conflicto y que lo solucionemos manualmente, al editar el archivo nos mostrara lo que tenemos nosotros y lo que hizo nuestro compañero y podremos ajustar el archivo a gusto para solucionar ese conflicto. En caso de ser archivos independientes de los que tenemos git fusionara las ramas sin decir nada. Para fusionar una rama con otra nosotros debemos estar en la rama que se mantendrá y con el MERGE le indicamos que rama se fusionara o unirá a nosotros, en este caso estamos en "master" así que hemos añadido a "master" la rama "prueba1". </p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gstash">
+					<h2>git stash / git pop / git drop / git list</h2>
+					<p>Git stash nos permite guardar la información de un archivo temporalmente, seria como guardarlo en el portapapeles, copiar (CTRL+C).<br/>
+					Git pop nos permite recuperar la información que guardamos con el git stash, seria como hacer un pegar (CTRL+V). Ten en cuenta que no es lo mismo copiar y pegar que usar el git stash y el git pop.<br/>
+					Git drop nos permite eliminar la información guardada con git stash.<br/>
+					Git list nos permite ver una lista de cambios realizados en el git stash.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="grebase">
+					<h2>git rebase</h2>
+					<p>El rebase es similar al MERGE pero con la diferencia de que así como con el MERGE mantiene todos los detalles el REBASE los elimina. Para entenderlo supongamos que trabajamos con ramas diferentes, a la hora de juntarlos utilizaremos el MERGE y decidiremos que se queda y que no se queda. A la hora de hacer un "git log --graph" observaremos que hay bifurcaciones en el repositorio por las ramas creadas, utilizando el REBASE esas ramas desaparecen y se queda todo lineal, al igual que el MERGE se pedirán que cambios guardar y cuales no guardar. Es mejor utilizar MERGE debido a que es más fácil ver donde se han realizado los cambios y por quien, mientras que el REBASE ofrece una vista más cómoda del trabajo.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="gtag">
+					<h2>git tag <code><</code>versión<code>></code></h2>
+					<p>Utilizando "git tag" se nos mostrara una lista de "versiones" que hayamos introducido, por ejemplo podemos tener "git tag v1.0" y asi sucesivamente a medida que vayamos creando nuestro proyecto, así podemos tener un seguimiento de versiones de nuestro trabajo.</p>
 				</article>
-				<article>
-					<h2>Articulo 1</h2>
-					<p>Descripción 1</p>
+				
+				<article id="grevert">
+					<h2>git revert</h2>
+					<p>Git revert es muy similar a "git reset --HARD HEAD~1" solo que así como el RESET elimina todo rastro de commits, archivos y carpetas el REVERT lo que hace es un commit donde indica que se a eliminado el último commit y con ello los archivos, sin embargo los archivos y el commit eliminado siguen presentes en un commit. Para entenderlo mejor supongamos que tenemos el commit número 5 y le hacemos un REVERT, pues bien, Git nos va a crear un commit llamado "revert commit 5" el cual indicara que se ha eliminado el commit 5 pero seguirá estando presente y lo que tenga ese commit serán los datos del commit anterior (4). (<a href="tutorials.html" >Ver tutoriales</a>)</p>
 				</article>
+				
 			</main>
 			
 			<footer>
 				<p id="autor1">Miquel Costa<br/>
 				Visita: <a id="IesSonFerrer" href="http://www.iessonferrer.net"> IES Son Ferrer </a><br/>
-				Todos lo estudiado en clase resumido 2017 &copy <br/>
-				Practica de Entorno y Desarrollo junto a Lenguaje de Marcas.</p> 
+				Todo lo estudiado en clase resumido 2017 <br/>
+				Practica de Entorno y Desarrollo junto a Lenguaje de Marcas. (<a href="https://git-scm.com/book/es/v1">Guía Oficial</a>)</p> 
 				<a href="http://es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptable"><img id="responsiveIcon" title="HTML5, CSS3, JavaScript, Responsive" alt="HTML5, CSS3, JavaScript, Responsive" src="imagenes/responsive.png" /></a>
 			</footer>
 		</div>
