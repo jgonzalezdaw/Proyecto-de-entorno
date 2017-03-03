@@ -127,7 +127,7 @@
 				<article id="greset">
 					<h2>git reset --HARD HEAD~1 / git reset --SOFT HEAD~1</h2>
 					<p>Git Reset se utiliza para volver a un estado anterior donde no nos gusta el último commit, es muy similar al REVERT pero no actúa de la misma forma. <br/>
-					Podemos observar que hay dos comandos de reset, HARD y SOFT. En el caso de utilizar HARD nos eliminara el último commit y los archivos que contenía si fueron creados o los devolverá al estado del anterior commit. En el caso de utilizar el SOFT nos eliminara el último commit pero con la diferencia de que en lugar de borrarnos los archivos o recuperar el estado anterior los mantendrá como estaban. (<a href="tutorials.html" >Ver tutoriales</a>)</p>
+					Podemos observar que hay dos comandos de reset, HARD y SOFT. En el caso de utilizar HARD nos eliminara el último commit y los archivos que contenía si fueron creados o los devolverá al estado del anterior commit. En el caso de utilizar el SOFT nos eliminara el último commit pero con la diferencia de que en lugar de borrarnos los archivos o recuperar el estado anterior los mantendrá como estaban. (<a href="tutorials.html" >Ver guías</a>)</p>
 				</article>
 				
 				<article id="gbranch">
@@ -185,7 +185,7 @@
 				
 				<article id="grevert">
 					<h2>git revert</h2>
-					<p>Git revert es muy similar a "git reset --HARD HEAD~1" solo que así como el RESET elimina todo rastro de commits, archivos y carpetas el REVERT lo que hace es un commit donde indica que se a eliminado el último commit y con ello los archivos, sin embargo los archivos y el commit eliminado siguen presentes en un commit. Para entenderlo mejor supongamos que tenemos el commit número 5 y le hacemos un REVERT, pues bien, Git nos va a crear un commit llamado "revert commit 5" el cual indicara que se ha eliminado el commit 5 pero seguirá estando presente y lo que tenga ese commit serán los datos del commit anterior (4). (<a href="tutorials.html" >Ver tutoriales</a>)</p>
+					<p>Git revert es muy similar a "git reset --HARD HEAD~1" solo que así como el RESET elimina todo rastro de commits, archivos y carpetas el REVERT lo que hace es un commit donde indica que se a eliminado el último commit y con ello los archivos, sin embargo los archivos y el commit eliminado siguen presentes en un commit. Para entenderlo mejor supongamos que tenemos el commit número 5 y le hacemos un REVERT, pues bien, Git nos va a crear un commit llamado "revert commit 5" el cual indicara que se ha eliminado el commit 5 pero seguirá estando presente y lo que tenga ese commit serán los datos del commit anterior (4). (<a href="tutorials.html" >Ver guías</a>)</p>
 				</article>
 				
 			</main>
