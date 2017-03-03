@@ -2,15 +2,15 @@
 
 
 html{
-font-family: Arial;	
-font-size: 62.5%; 
-height: 100%; 
-cursor: default;
-background-color:#FFF;
-background-image: url("imagenes/logo.png");
-background-repeat: no-repeat;
-	
+	font-family: Arial;	
+	font-size: 62.5%; 
+	height: 100%; 
+	cursor: default;
+	background-color:#FFF;
+	background-image: url("imagenes/logo.png");
+	background-repeat: no-repeat;
 }
+
 body{width:80%; border:1px solid black; float:right; margin-top:120px;}
 
 #wrapper {width: 100%; margin: 0 auto;}
@@ -98,7 +98,7 @@ header{	background-color:#F90;	height:55px;	width:100%;}
 
 /* CSS MAIN */
 
-#github {position: fixed;	z-index:1000; top:90%; left: 4%; font-size: 2em; border: 1px solid black; border-radius: 10px; padding: 5px 25px 5px 25px;}
+#github {position: fixed; z-index:1000; top:90%; left: 4%; font-size: 2em; border: 1px solid black; border-radius: 10px; padding: 5px 25px 5px 25px;}
 
 main{background-color: #FFEEDD; border-top: 1px solid black; width: 100%;}
 main article h2 {font-size: 2em; padding-top: 10px; padding-left: 20px;}
@@ -125,9 +125,81 @@ main article p {padding: 20px; font-size: 1.5em; background-color:#FFEEDD; margi
 	#autor1 {float:left; margin-top: 2%; margin-left: 1%; color: #000; font-size: 1.5rem; font-size: 1.5em;}
 	#responsiveIcon {float: right; width: 100px; margin-top: 2%; margin-right: 1%;}
 	#IesSonFerrer {color: #38B;}
- }
+
  
  
  
  
  /* CSS MEDIA QUERY */
+ 
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {	
+	/* CSS MAIN */
+	#github {left: 2%; font-size: 1.5em; padding: 5px 15px 5px 15px;}
+
+} 
+
+
+ 
+@media only screen and (min-width: 501px) and (max-width: 640px) {
+ 
+	html{font-size: 55%;}	
+	
+	/* CSS HEADER */
+	header{height:103px;}
+		
+	/* Menu */
+	.cssmenu ul li {min-width: 200px;}
+	
+	/* Menu Fixed*/
+	.cssmenu-fixed ul {min-width: 200px;}	
+	
+	/* CSS MAIN */
+	#github {left: 2%; font-size: 1.5em; padding: 5px 5px 5px 5px;}
+	
+	
+	/* CSS FOOTER */
+	 #autor1 {font-size: 1rem; font-size: 1em;}
+	 #responsiveIcon {width: 75px;}
+}
+	 
+	 
+	 
+	 
+@media only screen and (min-width: 445px) and (max-width: 500px) {
+ 
+	html{font-size: 62%;}	
+	
+	/* CSS HEADER */
+	header{height: 199px;}
+		
+	/* Menu */
+	.cssmenu ul li {min-width: 256px;}
+	
+	/* Menu Fixed*/
+	.cssmenu-fixed ul {min-width: 256px;}	
+	
+	/* CSS MAIN */
+	#github {left: 2%; font-size: 1.0em; padding: 5px 5px 5px 5px;}
+	
+}
+
+
+@media only screen and (max-width: 444px) {
+ 
+	html{font-size: 62%;}	
+	
+	/* CSS HEADER */
+	header{height: 199px;}
+		
+	/* Menu */
+	.cssmenu ul li {min-width: 256px;}
+	
+	/* Menu Fixed*/
+	.cssmenu-fixed ul {min-width: 256px;}	
+	
+	/* CSS MAIN */
+	#github {left: 2%; font-size: 1.0em; padding: 5px 5px 5px 5px;}
+	
+}
+ 
