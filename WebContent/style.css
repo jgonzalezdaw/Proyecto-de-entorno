@@ -18,7 +18,7 @@ body{width:80%; border:1px solid black; float:right; margin-top:120px;}
 
 /* CSS HEADER */
 
-header{	background-color:#F90;	height:55px;	width:100%;}
+header{background-color:#F90;	height:55px;	width:100%;}
 	
 /* Menu */
 .cssmenu {padding: 0; margin: 0; border: 0; font-size: 1.5rem; font-size: 1.5em; font-weight: bold; position: relative;	z-index:1000; margin-bottom: -55px;}
@@ -92,9 +92,82 @@ header{	background-color:#F90;	height:55px;	width:100%;}
 .cssmenu-fixed ul li.last ul ul {left: auto; right: 99.5%;}
 
 
+/* Menu RESPONSIVE*/
+.cssmenuresponsive {padding: 0; margin: 0; border: 0; font-size: 1.5rem; font-size: 1.5em; font-weight: bold; position: relative; z-index:1001; margin-bottom: -55px;}
+.cssmenuresponsive ul, .cssmenuresponsive li {list-style: none; margin: 0; padding: 0;}
+.cssmenuresponsive ul {position: relative; z-index: 597; }
+.cssmenuresponsive ul li { float: left; min-height: 1px; vertical-align: middle;}
+.cssmenuresponsive ul li:hover {position: relative; z-index: 599; cursor: default;}
+.cssmenuresponsive ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; width: 100%;}
+.cssmenuresponsive ul ul li {float: none;}
+.cssmenuresponsive ul ul ul {top: 0; left: auto; right: -190px; }
+.cssmenuresponsive ul li:hover > ul { visibility: visible;}
+.cssmenuresponsive ul ul {bottom: 0; left: 0;}
+.cssmenuresponsive ul ul {margin-top: 0;}
+.cssmenuresponsive ul ul li {font-weight: normal;}
+.cssmenuresponsive a { display: block; line-height: 1em; text-decoration: none;}
+.cssmenuresponsive {background-color: #000; border-bottom: 1px solid #000; }
+.cssmenuresponsive > ul {display: inline-block;}
+.cssmenuresponsive:after, .cssmenuresponsive ul:after {content: ''; display: block; clear: both;}
+.cssmenuresponsive a {background-color: #000; color: #FFF; padding: 0 10px; border-left: 1px solid #FFF; }
+.cssmenuresponsive ul {text-transform: uppercase;}
+.cssmenuresponsive ul ul {border-top: 3px solid #F00; text-transform: none;}
+.cssmenuresponsive ul ul a {background-color: #333; color: #FFF; text-align: center; border: 1px solid #000; border-top: 0 none; padding: 0px 10px;}
+.cssmenuresponsive ul ul ul {border-top: 0 none;}
+.cssmenuresponsive ul ul li {position: relative}  
+.cssmenuresponsive > ul > li > a {line-height: 48px;}
+.cssmenuresponsive ul ul li:first-child > a {border-top: 1px solid #000;}
+.cssmenuresponsive ul ul li:hover > a {background-color: #CF0; color: #000;}
+.cssmenuresponsive ul ul li:last-child > a {border-radius: 0 0 10px 10px; box-shadow: 0 1px 0 #000;}
+.cssmenuresponsive ul ul li:last-child:hover > a { border-radius: 0 0 10px 10px; }
+.cssmenuresponsive ul ul li.has-sub > a:after {content: '➤'; position: absolute; top: 50%; right: 15px; margin-top: -8px;}
+.cssmenuresponsive ul li:hover > a, .cssmenuresponsive ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenuresponsive ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenuresponsive ul li:hover > a {background-color: #CF0; color: #000;}
+.cssmenuresponsive ul li.has-sub > a:after {margin-left: 5px;}
+.cssmenuresponsive ul li.last ul {left: auto; right: 0;}
+.cssmenuresponsive ul li.last ul ul {left: auto; right: 99.5%;}
+
+/* Menu RESPONSIVE Fixed*/
+.cssmenuresponsive-fixed {padding: 0; margin: 0; border: 0; font-size: 1.5rem; font-size: 1.5em; font-weight: bold; min-width:80%; position: fixed; z-index:1001; top: 0px; }
+.cssmenuresponsive-fixed ul, .cssmenuresponsive li {list-style: none; margin: 0; padding: 0;}
+.cssmenuresponsive-fixed ul {position: relative; z-index: 597; }
+.cssmenuresponsive-fixed ul li { float: left; min-height: 1px; vertical-align: middle;}
+.cssmenuresponsive-fixed ul li:hover {position: relative; z-index: 599; cursor: default;}
+.cssmenuresponsive-fixed ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; width: 100%;}
+.cssmenuresponsive-fixed ul ul li {float: none;}
+.cssmenuresponsive-fixed ul ul ul {top: 0; left: auto; right: -190px; }
+.cssmenuresponsive-fixed ul li:hover > ul { visibility: visible;}
+.cssmenuresponsive-fixed ul ul {bottom: 0; left: 0;}
+.cssmenuresponsive-fixed ul ul {margin-top: 0;}
+.cssmenuresponsive-fixed ul ul li {font-weight: normal;}
+.cssmenuresponsive-fixed a { display: block; line-height: 1em; text-decoration: none;}
+.cssmenuresponsive-fixed {background-color: #000; border-bottom: 1px solid #000; }
+.cssmenuresponsive-fixed > ul {display: inline-block;}
+.cssmenuresponsive-fixed:after, .cssmenuresponsive ul:after {content: ''; display: block; clear: both;}
+.cssmenuresponsive-fixed a {background-color: #000; color: #FFF; padding: 0 10px; border-left: 1px solid #FFF; }
+.cssmenuresponsive-fixed ul {text-transform: uppercase;}
+.cssmenuresponsive-fixed ul ul {border-top: 3px solid #F00; text-transform: none;}
+.cssmenuresponsive-fixed ul ul a {background-color: #333; color: #FFF; text-align: center; border: 1px solid #000; border-top: 0 none; padding: 0px 10px;}
+.cssmenuresponsive-fixed ul ul ul {border-top: 0 none;}
+.cssmenuresponsive-fixed ul ul li {position: relative}  
+.cssmenuresponsive-fixed > ul > li > a {line-height: 48px;}
+.cssmenuresponsive-fixed ul ul li:first-child > a {border-top: 1px solid #000;}
+.cssmenuresponsive-fixed ul ul li:hover > a {background-color: #CF0; color: #000;}
+.cssmenuresponsive-fixed ul ul li:last-child > a {border-radius: 0 0 10px 10px; box-shadow: 0 1px 0 #000;}
+.cssmenuresponsive-fixed ul ul li:last-child:hover > a { border-radius: 0 0 10px 10px; }
+.cssmenuresponsive-fixed ul ul li.has-sub > a:after {content: '➤'; position: absolute; top: 50%; right: 15px; margin-top: -8px;}
+.cssmenuresponsive-fixed ul li.active > a {background-color: #FC0; color: #000;}
+.cssmenuresponsive-fixed ul li:hover > a {background-color: #CF0; color: #000;}
+.cssmenuresponsive-fixed ul li.has-sub > a:after {margin-left: 5px;}
+.cssmenuresponsive-fixed ul li.last ul {left: auto; right: 0;}
+.cssmenuresponsive-fixed ul li.last ul ul {left: auto; right: 99.5%;}
 
 
 
+.burger {display: none}
+.cssmenu {display: visible;}
+.cssmenuresponsive {display: none;}
 
 /* CSS MAIN */
 
@@ -132,10 +205,22 @@ main article p {padding: 20px; font-size: 1.5em; background-color:#FFEEDD; margi
  
  /* CSS MEDIA QUERY */
  
+@media only screen and (min-width: 1025px) {	
+	/* CSS MAIN */
+	header{height: 55px;}
+	#github {left: 2%; font-size: 1.5em; padding: 5px 15px 5px 15px;}
+	.cssmenu {display: visible;}
+	.cssmenuresponsive {display: none;}
+
+} 
+
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {	
 	/* CSS MAIN */
+	header{height: 55px;}
 	#github {left: 2%; font-size: 1.5em; padding: 5px 15px 5px 15px;}
+	.cssmenu {display: visible;}
+	.cssmenuresponsive {display: none;}
 
 } 
 
@@ -146,13 +231,17 @@ main article p {padding: 20px; font-size: 1.5em; background-color:#FFEEDD; margi
 	html{font-size: 55%;}	
 	
 	/* CSS HEADER */
-	header{height:103px;}
+	header{height: 103px;}
 		
 	/* Menu */
+	.cssmenu {display: visible;}
+	.cssmenuresponsive {display: none;}
+	.cssmenuresponsive-fixed {display: none;}
 	.cssmenu ul li {min-width: 200px;}
+	.burger {display: none;}
 	
 	/* Menu Fixed*/
-	.cssmenu-fixed ul {min-width: 200px;}	
+	.cssmenu-fixed ul li {min-width: 200px;}	
 	
 	/* CSS MAIN */
 	#github {left: 2%; font-size: 1.5em; padding: 5px 5px 5px 5px;}
@@ -171,13 +260,16 @@ main article p {padding: 20px; font-size: 1.5em; background-color:#FFEEDD; margi
 	html{font-size: 62%;}	
 	
 	/* CSS HEADER */
-	header{height: 199px;}
+	header{height: 0px;}
 		
 	/* Menu */
-	.cssmenu ul li {min-width: 256px;}
+	.cssmenu {display: none;}
+	.cssmenuresponsive {display: none;}
+	.cssmenuresponsive ul li {min-width: 256px;}
+	.burger {width: 50px; display: block;  margin: 55px -70px; cursor: pointer; position: fixed; padding: 5px 5px 5px 5px;}
 	
 	/* Menu Fixed*/
-	.cssmenu-fixed ul {min-width: 256px;}	
+	.cssmenu-fixed ul li {min-width: 256px;}	
 	
 	/* CSS MAIN */
 	#github {left: 2%; font-size: 1.0em; padding: 5px 5px 5px 5px;}
@@ -190,13 +282,18 @@ main article p {padding: 20px; font-size: 1.5em; background-color:#FFEEDD; margi
 	html{font-size: 62%;}	
 	
 	/* CSS HEADER */
-	header{height: 199px;}
+	header{height: 0px;}
 		
 	/* Menu */
-	.cssmenu ul li {min-width: 256px;}
+	.cssmenu {display: none;}
+	.cssmenuresponsive {display: none;}
+	.cssmenuresponsive ul li {min-width: 256px;}
+	.burger {width: 50px; display: block;  margin: 55px -70px; cursor: pointer; position: fixed; padding: 5px 5px 5px 5px;}
+
+
 	
 	/* Menu Fixed*/
-	.cssmenu-fixed ul {min-width: 256px;}	
+	.cssmenu-fixed ul li {min-width: 256px;}	
 	
 	/* CSS MAIN */
 	#github {left: 2%; font-size: 1.0em; padding: 5px 5px 5px 5px;}
